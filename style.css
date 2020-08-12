@@ -37,7 +37,7 @@ body{
 }
 .content{
 	padding: 25px 0;
-	
+	min-height: 500px;
 	position: relative;
 }
 .fon{
@@ -87,4 +87,37 @@ p{
 }
 .content a{
 	color: #000094;
+}
+.content table a{
+	color: inherit;
+}
+table {
+	border-collapse: collapse;
+}
+table td{
+	padding: 10px;
+	border: 1px solid;
+	text-align: center;
+}
+table .foto-td{
+	text-align: left;
+}
+table td img{
+	display: block;
+	width: 120px;
+}
+table td span{ 
+	display: inline-block;
+	line-height: 1.1;
+	width: 200px;
+	display: -webkit-box;
+	  -webkit-line-clamp: 3;
+	  -webkit-box-orient: vertical;
+	  overflow: hidden;
+}
+table .sum{
+	text-align: right;
+}
+table tfoot td{
+	text-align: left;
 }

@@ -1,5 +1,12 @@
+@font-face {
+  font-family: "helvetica";
+  src: url("./font/Helvetica.ttf") format("truetype"),
+       url("./fonts/Helvetica-bold.ttf") format("truetype");
+}
+
 body{
-	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-family: 'helvetica', sans-serif;
+	font-size: 14px;
 
 }
 *{
@@ -10,26 +17,30 @@ body{
 .wrap{
 	width: 100%;
 	padding: 0 15px;
-	max-width: 992px;
+	max-width: 767px;
 	margin: 0 auto;
 }
 .header{
-	border-bottom: 1px solid #c2c2c2;
 	padding-bottom: 20px;
 	padding-top: 20px;
-	line-height: 1.5;
+	line-height: 1.2;
 	font-weight: 500;
+}
+.header__logo img{
+	width: 200px;
 }
 .header .wrap{
 	display: flex;
 	justify-content: space-between;
 }
 .header__left{
-	flex: 0 0 25%;
+	flex: 0 0 35%;
+	font-weight: bold;
 }
 .header__right{
-	flex: 0 0 25%;
+	flex: 0 0 35%;
 	text-align: right;
+	font-weight: bold;
 }
 .header span{
 	margin-top: 20px;
@@ -37,7 +48,6 @@ body{
 }
 .content{
 	padding: 25px 0;
-	min-height: 500px;
 	position: relative;
 }
 .fon{
@@ -64,8 +74,7 @@ body{
 	margin-bottom: 10px;
 }
 p{	
-	font-size: 16px;
-	text-indent: 4em; /* Отступ первой строки */
+	font-size: 14px;
 	margin-bottom: 5px;
 }
 .content ul li{
@@ -74,7 +83,6 @@ p{
 .footer{
 	line-height: 1.5;
 	padding: 25px 0;
-	border-top: 1px solid #c2c2c2;
 }
 .footer div{
 	font-weight: bold;
@@ -152,4 +160,48 @@ table tfoot td{
 	justify-content: flex-end;
 	align-items: center;
 	margin-top: 50px;
+}
+
+.content a.vigoda{
+	color: #000;
+	
+}
+.vigoda{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: flex;
+}
+
+.vigoda__wrap{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+}
+
+.vigoda__item{
+	margin-bottom: 20px;
+	width: 50%;
+	display: flex;
+	padding-right: 25px;
+}
+.vigoda__item img{
+	margin-right: 20px;
+}
+
+.ludey__wrap{
+	margin-top:20px;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 20px;
+	justify-content: center;
+}
+.ludey__wrap h3{
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 25px;
+}
+.ludey__wrap img{
+	max-width: calc(100% / 4 - 20px);
+	margin-bottom: 10px;
+	margin: 0 10px;
 }

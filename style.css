@@ -175,7 +175,7 @@ table tfoot td{
 .vigoda__wrap{
 	display: flex;
 	flex-wrap: wrap;
-	margin-bottom: 50px;
+	margin-bottom: 25px;
 }
 
 .vigoda__item{
